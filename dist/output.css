@@ -738,10 +738,6 @@ section{
   overflow: hidden;
 }
 
-.scroll-smooth{
-  scroll-behavior: smooth;
-}
-
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -763,6 +759,16 @@ section{
 .bg-secondaryColor{
   --tw-bg-opacity: 1;
   background-color: rgb(255 204 0 / var(--tw-bg-opacity));
+}
+
+.bg-redColor{
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 52 51 / var(--tw-bg-opacity));
+}
+
+.bg-greenColor{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 121 54 / var(--tw-bg-opacity));
 }
 
 .py-10{
@@ -817,19 +823,14 @@ section{
   text-transform: uppercase;
 }
 
-.text-secondaryColor{
-  --tw-text-opacity: 1;
-  color: rgb(255 204 0 / var(--tw-text-opacity));
-}
-
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .text-blackColor{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-secondaryColor{
+  --tw-text-opacity: 1;
+  color: rgb(255 204 0 / var(--tw-text-opacity));
 }
 
 .home__title,
@@ -869,10 +870,6 @@ section{
   color: #с0сосв;
 }
 
-.hover\:scroll-auto:hover{
-  scroll-behavior: auto;
-}
-
 .hover\:text-secondaryColor:hover{
   --tw-text-opacity: 1;
   color: rgb(255 204 0 / var(--tw-text-opacity));
@@ -906,6 +903,10 @@ section{
 
   .md\:w-full{
     width: 100%;
+  }
+
+  .md\:flex-1{
+    flex: 1 1 0%;
   }
 
   .md\:basis-1\/2{
