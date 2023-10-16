@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,7 +35,7 @@
   </head>
   <body>
     <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
-    <header class="bg-primaryColor fixed top-0 left-0 w-full z-50">
+    <header class="bg-primaryColor fixed top-0 left-0 w-full z-50" id="header">
       <nav class="container relative h-14 flex justify-between items-center">
         <div>
           <a href="#" class="text-2xl uppercase font-oswald">
@@ -839,9 +839,106 @@
       </section>
     </main>
     <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
-    <footer></footer>
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <ul
+            class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-2"
+          >
+            <li>
+              <div class="space-y-3">
+                <a href="" class="text-4xl font-oswald uppercase"
+                  >Bur<span class="text-secondaryColor">ger</span></a
+                >
+                <p class="text-xs">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda nemo magnam consequuntur minima maxime odit, unde
+                  esse tempora illo velit?
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-lg uppercase font-oswald">SUPPORT</h3>
+                <a href="#" class="text-xs hover:text-secondaryColor">FAQ's</a>
+                <a href="#" class="text-xs hover:text-secondaryColor"
+                  >Privacy Policy</a
+                >
+                <a href="#" class="text-xs hover:text-secondaryColor"
+                  >Terms & Conditions</a
+                >
+                <a href="#" class="text-xs hover:text-secondaryColor"
+                  >Contact</a
+                >
+              </div>
+            </li>
+            <li class="space-y-5">
+              <div class="space-y-2">
+                <h3 class="text-lg uppercase font-oswald">Phone</h3>
+                <p class="flex items-center gap-2 text-xs">
+                  <i class="fa-solid fa-phone text-lg text-secondaryColor"></i
+                  >+91 9820482180
+                </p>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-lg uppercase font-oswald">Email</h3>
+                <p class="flex items-center gap-2 text-xs">
+                  <i
+                    class="fa-solid fa-envelope text-lg text-secondaryColor"
+                  ></i
+                  >arshs287@gmail.com
+                </p>
+              </div>
+            </li>
+
+            <li class="space-y-5">
+              <div class="space-y-2">
+                <h3 class="text-lg uppercase font-oswald">Address</h3>
+                <p class="flex items-center gap-2 text-xs">
+                  <i
+                    class="fa-solid fa-location-dot text-lg text-secondaryColor"
+                  ></i
+                  >My Address...
+                </p>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-lg uppercase font-oswald">Follow Us!</h3>
+                <div class="space-x-3">
+                  <i
+                    class="fa-brands fa-facebook-f text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"
+                  ></i>
+                  <i
+                    class="fa-brands fa-twitter text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"
+                  ></i>
+                  <i
+                    class="fa-brands fa-square-instagram text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"
+                  ></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div
+            class="flex flex-col items-center border-t border-primaryColorLight py-5 md:flex-row md:justify-between"
+          >
+            <p class="paragraph">Burger Website made By Arsh Shaikh</p>
+            <p class="paragraph">
+              <i class="fa-solid fa-copyright"></i> by Arsh❤️. All Rights
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
 
     <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+    <a
+      href="#"
+      class="fixed right-4 bottom-4 -bottom-1/2 bg-secondaryColor shadow-sm inline-block px-4 py-2 rounded-full text-lg text-blackColor z-50 hover:-translate-y-1 ease-in duration-200"
+      id="scroll-up"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
 
     <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
