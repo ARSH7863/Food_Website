@@ -81,3 +81,33 @@ const scrollHeader = () => {
 };
 
 window.addEventListener('scroll', scrollHeader);
+
+const html = document.querySelector('html');
+const themeBtn = document.getElementById('theme-toggle');
+
+const darkMode = () => {
+  html.classList.add('dark');
+  themeBtn.classList.replace('ri-moon-line', 'ri-sun-line');
+  localStorage.setItem('mode', 'dark');
+};
+
+const lightMode = () => {
+  html.classList.remove('dark');
+  themeBtn.classList.replace('ri-sun-line', 'ri-moon-line');
+  localStorage.setItem('mode', 'light');
+};
+
+//Light Mode
+if (localStorage.getItem('mode') == 'dark') {
+  darkMode();
+} else {
+  lightMode();
+}
+//Dark Mode
+themeBtn.addEventListener('click', (e) => {
+  if (localStorage.getItem('mode') == 'light') {
+    darkMode();
+  } else {
+    lightMode();
+  }
+});
