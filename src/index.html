@@ -52,27 +52,37 @@
         >
           <ul class="flex flex-col text-center gap-5 md:flex-row">
             <li>
-              <a href="#home" class="nav__link hover:text-secondaryColor"
+              <a
+                href="#home"
+                class="nav__link text-secondaryColor hover:text-secondaryColor ease-in duration-200"
                 >Home</a
               >
             </li>
             <li>
-              <a href="#about" class="nav__link hover:text-secondaryColor"
+              <a
+                href="#about"
+                class="nav__link hover:text-secondaryColor ease-in duration-200"
                 >About Us</a
               >
             </li>
             <li>
-              <a href="#menu" class="nav__link hover:text-secondaryColor"
+              <a
+                href="#menu"
+                class="nav__link hover:text-secondaryColor ease-in duration-200"
                 >Menu</a
               >
             </li>
             <li>
-              <a href="#review" class="nav__link hover:text-secondaryColor"
+              <a
+                href="#review"
+                class="nav__link hover:text-secondaryColor ease-in duration-200"
                 >Reviews</a
               >
             </li>
             <li>
-              <a href="#contact" class="nav__link hover:text-secondaryColor"
+              <a
+                href="#contact"
+                class="nav__link hover:text-secondaryColor ease-in duration-200"
                 >Contact</a
               >
             </li>
@@ -103,10 +113,12 @@
             <img
               src="./img/home-image.png"
               alt="home image"
-              class="w-60 md:w-full"
+              class="home__image w-60 md:w-full"
             />
           </div>
-          <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+          <div
+            class="home__content text-center md:basis-1/2 md:text-start lg:basis-3/5"
+          >
             <h1 class="home__title">HAPPY TUMMY WITH TASTY BURGERS!</h1>
             <div class="seperator mx-auto md:mx-0"></div>
             <p class="paragraph">
@@ -143,7 +155,7 @@
         <div class="container flex flex-col gap-5 md:flex-row">
           <!-- card 1 -->
           <div
-            class="bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1"
+            class="category__card bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1"
           >
             <div class="basis-1/3 relative">
               <img
@@ -160,10 +172,9 @@
               <a href="#" class="text-blackColor cursor-pointer">Buy Online</a>
             </div>
           </div>
-
           <!-- card 2 -->
           <div
-            class="bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1"
+            class="category__card bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1"
           >
             <div class="basis-1/3 relative">
               <img
@@ -184,7 +195,7 @@
           </div>
           <!-- card 3 -->
           <div
-            class="bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1"
+            class="category__card bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1"
           >
             <div class="basis-1/3 relative">
               <img
@@ -210,7 +221,7 @@
         <div class="container flex flex-col gap-5 lg:gap-10 lg:flex-row">
           <!-- Card1 -->
           <div
-            class="bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1 dark:bg-darkColorLight"
+            class="promo__card-1 bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1 dark:bg-darkColorLight"
           >
             <img
               src="img/promo-1.png"
@@ -228,7 +239,7 @@
           </div>
           <!-- Card2 -->
           <div
-            class="bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1 dark:bg-darkColorLight"
+            class="promo__card-2 bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1 dark:bg-darkColorLight"
           >
             <img
               src="img/promo-2.png"
@@ -250,10 +261,14 @@
       <section id="about">
         <div class="container flex flex-col gap-10 md:flex-row">
           <div class="flex-1">
-            <img src="img/about.jpg" alt="About Image" class="rounded-lg" />
+            <img
+              src="img/about.jpg"
+              alt="About Image"
+              class="about__img rounded-lg"
+            />
           </div>
 
-          <div class="flex-1">
+          <div class="about__content flex-1">
             <h2 class="section__title">
               FIND FOOD AND DRINKS, ALL IN ONE PLACE!
             </h2>
@@ -323,7 +338,7 @@
               </ul>
             </div>
           </div>
-          <div>
+          <div class="menu__items">
             <ul
               class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12"
             >
@@ -706,7 +721,7 @@
         id="review"
         class="bg-primaryColorLight py-10 dark:bg-darkColorLight"
       >
-        <div class="container">
+        <div class="customer__review container">
           <div class="max-w-md mx-auto text-center">
             <h2 class="section__title">OUR CUSTOMER REVIEWS</h2>
             <div class="seperator mx-auto"></div>
@@ -1008,6 +1023,7 @@
     </script>
 
     <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
     <script src="main.js"></script>
